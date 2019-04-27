@@ -20,7 +20,7 @@
     ·conda activate tldjango (首先激活Django的环境, PS:激活后命令行前面回带一个(tldjango)这样的前缀)
     ·pip install django==1.8
 # 后台流程
-
+·https://img-blog.csdnimg.cn/20190404010431829.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvY2thZ2U=,size_16,color_FFFFFF,t_70
 # 创建第一个Django程序
 ·django-admin startproject tulingxueyuan (创建Django项目: tulingxueyuan)
 # 命令行启动:
@@ -43,6 +43,7 @@
     ·按照具体的请求url, 导入到相应的业务
     ·django的信息控制中枢
     ·本质上就是接受URL和相应的处理模块的一个映射
+    ·https://img-blog.csdnimg.cn/2019040401045374.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvY2thZ2U=,size_16,color_FFFFFF,t_70
     ·在接受URL请求的匹配上使用了RE
     ·URL的具体内容在urls.py文件中 (阅读该文件的代码,发现内部是使用正则在处理URL和对应模块的对应关系)
 ·需要关注的两点:
@@ -62,13 +63,20 @@
     ·如果从上到下都没有找到合适的匹配内容,则报错
 # 2. 正常映射
 ·把某一个符合RE的URL映射到事务处理函数中去
-·举例如下： from showeast import views as sv urlpatterns = [ url(r'admin/',adming.site.urls), url(r'^normalmap/', sv.normalmap), ]
+·举例如下： 
+                from showeast import views as sv 
+                urlpatterns = [ 
+                    url(r'admin/',adming.site.urls), 
+                    url(r'^normalmap/', sv.normalmap), 
+                ]
 # 3.URL 中带参数映射
 ·在多事件处理代码中需要由URL传入参数，形如/myurl/param中的param
 ·参数都是字符串形式，如果需要整数等形式需要自行传唤
-·统称的形式如下: > /search/page/432 中的432需要经常性变化内容，就是参数
+·统称的形式如下: 
+    ·/search/page/432 中的432需要经常性变化内容，就是参数
 
-·一个较为复杂的例子： > url(r'^withparam/(?P<year>[0-9])/(?P<month>[0,1][0-9)',tv.withparam)
+·一个较为复杂的例子： 
+    ·url(r'^withparam/(?P<year>[0-9])/(?P<month>[0,1][0-9)',tv.withparam)
     ·尖号表示从字符串左边第一个字符开始匹配
     ·圆括号表示的是一个参数，里面的内容作为参数传递给被调用的函数 参数名称以问号加大写P开头吗，尖括号里面就是参数的名字 后面花括号表示出现的次数，此处的4 表示只能出现4个0-9的数字
 # 4. URL在APP中处理
@@ -114,16 +122,25 @@
         ·max_age 和 expires , 二选一
         ·如果不指定过期时间,则两个星期后过期
         ·delete_cookie(key): 删除指定的key的Cookie, 如果key不存在, 也不会报错
-        ·avatar
+        ·https://img-blog.csdnimg.cn/20190404010526239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvY2thZ2U=,size_16,color_FFFFFF,t_70
 
 # 4. HttpRespnseRedirect
 ·重定向, 服务器端跳转
 ·构造函数的第一个参数用来指定重定向的地址
 ·例子: ShowViews/views.py
-·在east/urls中添加以下内容: ` url(r'^v101/', views.v101), url(r'^v102/', views.v102), url(r'^v11/"' views.v11, name = "v11"),
+·在east/urls中添加以下内容: 
 
-# /east/ShowViews/views 中添加以下内容 def v101(request): return HttpRespnseRedirect("/v11") def v102(request): return HttpRespnseRedirect(reverse("v11")) def v11(request): return HttpRespnseRedirect(""这是v11 的返回值") ` avatar
-
+                    url(r'^v101/', views.v101), 
+                    url(r'^v102/', views.v102), 
+                    url(r'^v11/"' views.v11, name = "v11"),
+                    # /east/ShowViews/views 中添加以下内容 
+                    def v101(request): 
+                        return HttpRespnseRedirect("/v11") 
+                    def v102(request): 
+                        return HttpRespnseRedirect(reverse("v11")) 
+                    def v11(request): 
+                        return HttpRespnseRedirect(""这是v11 的返回值") 
+·https://img-blog.csdnimg.cn/20190404010542748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvY2thZ2U=,size_16,color_FFFFFF,t_70
 # 5.Request 对象
 ·Request介绍
     ·服务器接受到http协议的请求后,会根据报文创建HttpRequest对象
@@ -140,7 +157,10 @@
     ·POST : 一个类似字典的对象, 包含post请求方式的所有参数
     ·FILES : 一个类似字典的对象, 包含所有的上传文件
     ·COOKIES : 一个标准的Python字典, 包含所有cookie, 键和值都包含其中
-    ·session: 一个即可独有可写的类似于字典的对象,表示当前会话. - 只有当Django启用会话时才可用. - 详细内容见"状态保持".
+    ·session: 一个即可独有可写的类似于字典的对象,表示当前会话. 
+       · 只有当Django启用会话时才可用. 
+       · 详细内容见"状态保持".
+       
 ·方法
     ·is_ajax() : 如果请求是通过XMLHttpRequest发起的,则返回True
 ·QueryDict 对象 [这个是Django特设的对象,HTTP本身没有]
@@ -169,9 +189,12 @@
         ·checkbox存在一键多值的问题
     ·键是开发人员定下来的,值是可变的
     ·例子 ShowViews/views/v9_post
-        ·setting中设置模版位置, 在根目录下建立一个templates文件夹,然后在setting.py里修改为: > *('DIRS': [os.path.join(BASE_DIR,"templates")],)
-        ·setting中CRSF跨站攻击防护要关闭,此行需要注释掉) > * django.middleware.csrf.CsrfViewMiddleware',
-        ·设置get页面的urls和参数 需要在路由文件中添加两个路由: > * url(r'^v9get/', v.v9get), > * url(r'^v9post/', v.v9post),
+        ·setting中设置模版位置, 在根目录下建立一个templates文件夹,然后在setting.py里修改为: 
+            ·('DIRS': [os.path.join(BASE_DIR,"templates")],)
+        ·setting中CRSF跨站攻击防护要关闭,此行需要注释掉)  
+            ·django.middleware.csrf.CsrfViewMiddleware',
+        ·设置get页面的urls和参数 需要在路由文件中添加两个路由: 
+            ·url(r'^v9get/', v.v9get), > * url(r'^v9post/', v.v9post),
 
 ·手动编写视图
     ·实验目的:
@@ -191,7 +214,7 @@
         ·templater_name : 模版名称
         ·content_instance : 上下文环境
         ·参见例子: teacherapp/views/rendertest
-    ·rendertoresponse
+    ·render_to_response
         ·根据给定的上下文字典渲染给定模版,返回渲染后的HttpResponse
         ·参见例子: teacherapp/views/render4test
 
@@ -246,16 +269,28 @@
     ·所有需要使用ORM的class都必须是 models.Model 的子类
     ·class中的所有属性对应表格中的字段
     ·字段的类型都必须使用 models.xxx 不能使用python中的类型
-    ·在django种，Models负责跟数据库交互 avatar
+    ·在django种，Models负责跟数据库交互
+    ·https://img-blog.csdnimg.cn/2019040401055836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvY2thZ2U=,size_16,color_FFFFFF,t_70
 # Django 链接数据库
 ·自带默认数据库Sqllite3
     ·关系型数据库
     ·轻量级
     ·建议开发用sqlite3， 部署用mysql之类数据库
     ·切换数据库在settings中进行设置
-    ·# 用django 连接 mysql DATABASES = [ 'default' = { 'ENGINE' : 'django.db.backends.mysql', 'NAME' : '数据库名', 'PASSWORD' : '数据库密码', 'HOST' : '127.0.0.1', 'PORT' : '3306', } ]
-    ·django 连接 mysql需要在项目文件下的init文件中导入pymysql包
-        ·> import pymysql > pymysql.installasMySQLdb()
+    ·# 用django 连接 mysql 
+    
+            DATABASES = [ 
+                'default' = { 
+                    'ENGINE' : 'django.db.backends.mysql', 
+                    'NAME' : '数据库名', 
+                    'PASSWORD' : '数据库密码', 
+                    'HOST' : '127.0.0.1', 
+                    'PORT' : '3306', 
+                } 
+            ]
+   ·django 连接 mysql需要在项目文件下的init文件中导入pymysql包
+        ·import pymysql 
+        ·pymysql.installasMySQLdb()
 # models类的创建与使用
 ·定义和数据库表映射的类
     ·在应用中的models.py文件中定义class [每一个app下面都有这个文件]
@@ -269,21 +304,59 @@
     ·default : 默认值
     ·unique : 唯一
     ·verbose_name : 假名
-    ·数据库的迁移（在models里创建类后通知数据库）
-    ·在命令行中，生成数据迁移的语句（生成sql语句） > * python manage.py makemigrations
-    ·在命令行中，输入数据迁移的指令 > * python manage.py migrate
-    ·如果迁移中没有变化或者报错，可以强制迁移 > python manage.py makemigrations 应用名 > python manage.py migrate 应用名
+·数据库的迁移（在models里创建类后通知数据库）
+    ·在命令行中，生成数据迁移的语句（生成sql语句） 
+        ·python manage.py makemigrations
+    ·在命令行中，输入数据迁移的指令 
+        ·python manage.py migrate
+    ·如果迁移中没有变化或者报错，可以强制迁移 
+        ·python manage.py makemigrations 应用名 
+        ·python manage.py migrate 应用名
     ·对于默认数据库，为了避免出现混乱，前提是数据库中没有数据，可以删除自定义app下的migrations文件夹和db.sqlites3数据库
-    ·如果报错,显示"App 'APP名字' could not be found. Is it in INSTALLED_APPS?", 说明没有在settings.py里注册: INSTALLED_APPS = ( 'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'teacher', # 把自定义的app填进去 'orm', )
+    ·如果报错,显示"App 'APP名字' could not be found. Is it in INSTALLED_APPS?", 说明没有在settings.py里
+    ·注册:
+    
+                INSTALLED_APPS = ( 
+                   'django.contrib.admin', 
+                   'django.contrib.auth', 
+                   'django.contrib.contenttypes', 
+                   'django.contrib.sessions', 
+                   'django.contrib.messages', 
+                   'django.contrib.staticfiles', 
+                   'teacher', 
+                   # 把自定义的app填进去 'orm', 
+                )
 # 查看数据库中的数据
 ·1.启动命令行：python manage.py shell 注意点：对orm的操作分为静态函数和非静态函数两种，静态函数是指在内存中类共用的，非静态函数是指每个实例掌握的
-·2.在命令行中导入对应的映射类 > * from app名.models import 类名
-·一个完整的例子: from teacher.models import Teacher dana = Teacher() dana.name = "Dana" dana.age = 18 dana.address = "北京图灵学院" dana.save() # 保存 ta = Teacher.objects.all() # 返回集合 ta[0].name # 访问name属性,显示: Dana ta[0].age # 访问age属性,显示: 18 ta[0].address # 访问address属性,显示: '北京图灵学院' ta[0].course # 访问course属性,显示为空
-·如上操作向Teacher表中增加几条记录之后,用for循环遍历: for t in ta: print("Name: {0}, Age{1},Address:{2},Course:{3}".format(t.name,t.age,t.address,t.course)) 显示结果: Name: Dana, Age18,Address:北京图灵学院,Course: Name: Daozhang, Age45,Address:程度小北路,Course: Name: WangGonh, Age29,Address:,Course:Java
-·查询age=45的记录 > ta = Teacher.objects.filter(age=45)
-    > ta
-    直接输入ta回车,显示ta的内容,age=45的记录只有一个就是daozhang, 显示为:
-    []
+·2.在命令行中导入对应的映射类 
+    ·from app名.models import 类名
+·一个完整的例子: 
+
+                from teacher.models import Teacher 
+                dana = Teacher() 
+                dana.name = "Dana" 
+                dana.age = 18 
+                dana.address = "北京图灵学院" 
+                dana.save() # 保存 
+                ta = Teacher.objects.all() # 返回集合 
+                ta[0].name # 访问name属性,显示: Dana 
+                ta[0].age # 访问age属性,显示: 18 
+                ta[0].address # 访问address属性,显示: '北京图灵学院' 
+                ta[0].course # 访问course属性,显示为空
+·如上操作向Teacher表中增加几条记录之后,用for循环遍历: 
+
+                for t in ta: 
+                    print("Name: {0}, Age:{1},Address:{2},Course:{3}".format(t.name,t.age,t.address,t.course)) 
+                显示结果: 
+                    Name: Dana, Age18,Address:北京图灵学院,Course: 
+                    Name: Daozhang, Age45,Address:程度小北路,Course: 
+                    Name: WangGonh, Age29,Address:,Course:Java
+·查询age=45的记录 
+
+                 ·ta = Teacher.objects.filter(age=45)
+                 ·ta
+                   直接输入ta回车,显示ta的内容,age=45的记录只有一个就是daozhang, 显示为:
+                   [<Teacher: Daozhang>]
 
 ·3.使用object属性操作数据库，object是模型中实际和数据进行交互的
 ·4.查询命令
@@ -301,7 +374,7 @@
         ·year:年份
         ·isnull:是否为空
         ·2、查找等于指定值的格式：属性名=值
-        ·3、模糊查找：属性名__查找方式=值
+        ·3、模糊查找：属性名__查找方式=值   # 两个下划线
         ·查找course中包含字母T的老师
             ·ta = Teacher.objects.filter(course__contains = "T")
         ·查找方式有：
@@ -314,21 +387,60 @@
 ·多表联查：利用多个多联合查找某一项信息或者多项信息
 
 ·1:1 OneToOne
-    ·建立关系:在模型任意一边即可，使用OneToOneField
-    ·add: （增）有两种方式：
+  ·建立关系:在模型任意一边即可，使用OneToOneField
+  ·add: （增）有两种方式：
         ·实例化方法，直接实例化保存
         ·create方法，返回类型是，推荐这种方法
         ·PS: 添加有关系的一边，使用create方法，或者使用实例创建
-        ·例如： s = School() s.school_id = 2 s.school_name = "nanjingtulingxueyuan" s.save() #方法1：直接实例化 m =Manager() m.manager_id=10 m.manager_name = "dana" m.my_school=s m.save() #方法2：使用create m = Manager.objects.create(manager_id=20,manager_name="erna",my_school=s)`
-    ·query: （查）
-        ·由子表查母表（定义关系的表叫子表），由子表的属性直接提取信息： m = Manager.objects.get(manager_name="dana") m m.my_school m.my_school.school_name 'nanjing tulingxueyuan' # 查询成功
-        ·又或者可以把上述操作串起来一次性操作： Manager.objects.get(manager_name="dana").my_school.school_name 'nanjing tulingxueyuan' # 查询成功
-        ·由母表查子表，使用双下划线： s = School.objects.get(manager__manager_name="dana") s # 查询成功
-    ·change:（改）
-        ·单个修改后使用save保存 s.school_name = "南京图灵学院" s.save() s # 修改成功
-        ·批量修改使用update ss = School.objects.all() ss.update(school_name="图灵学院") ss [, ] # 批量修改成功
-        ·无论是对子表还是母表修改方法都一样
-    ·delete:直接使用delete删除
+        ·例如： 
+        
+                    s = School() 
+                    s.school_id = 2 
+                    s.school_name = "nanjingtulingxueyuan" 
+                    s.save() 
+                    #方法1：直接实例化 
+                    m =Manager() 
+                    m.manager_id=10 
+                    m.manager_name = "dana" 
+                    m.my_school=s m.save() 
+                    #方法2：使用create 
+                    m = Manager.objects.create(manager_id=20,manager_name="erna",my_school=s)`
+ ·query: （查）
+   ·由子表查母表（定义关系的表叫子表），由子表的属性直接提取信息： 
+        
+                        m = Manager.objects.get(manager_name="dana") 
+                        m 
+                        <Manager: dana>
+                        m.my_school 
+                        <School: nanjing tulingxueyuan>
+                        m.my_school.school_name 
+                        'nanjing tulingxueyuan' # 查询成功
+   ·又或者可以把上述操作串起来一次性操作：
+        
+                        Manager.objects.get(manager_name="dana").my_school.school_name 
+                        'nanjing tulingxueyuan' # 查询成功
+   ·由母表查子表，使用双下划线： 
+       
+                        s = School.objects.get(manager__manager_name="dana") 
+                        s 
+                        <School: nanjing tulingxueyuan># 查询成功
+ ·change:（改）
+   ·单个修改后使用save保存 
+        
+                        s.school_name = "南京图灵学院"
+                        s.save()
+                        s
+                        <School: 南京图灵学院> # 修改成功
+
+   ·批量修改使用update 
+   
+                        ss = School.objects.all()
+                        ss.update(school_name="图灵学院")
+                        ss
+                        [<School: 图灵学院>, <School: 图灵学院>] # 批量修改成功
+ 
+   ·无论是对子表还是母表修改方法都一样
+ ·delete:直接使用delete删除
 
 ·1:N OneToMany
     ·一个表格的一个数据项/对象等，可有很多个另一个表格的数据项
@@ -343,50 +455,117 @@
     ·query:
         ·以学校和老师举例
         ·如果知道老师，查学校，则通过增加的关系属性，直接使用
-        ·例如：查找t1老师是哪个学校的: t1.teacher_name '刘大拿' t1.my_school
-    ·反查
+        ·例如：查找t1老师是哪个学校的:
+        
+                            t1.teacher_name
+                            '刘大拿'
+                            t1.my_school
+                            <School: 图灵学院>
+   ·反查
         ·由学校，想查下这个学校所有老师，则在学校后跟老师这个类（类名称小写）接下划线set来表示
         ·可以简单理解成teacher_set是School类里的一个隐藏属性
-        ·例如，查询1号学校下面有多少个老师： ts = s1.teacher_set.all() ts [, ] ts[0].teacher_name '刘大拿'
-        ·又或者精确查找： t = s1.teacher_set.all().filter(teacher_name="刘大拿") t[0].teacher_name '刘大拿'
+    ·例如，查询1号学校下面有多少个老师：
+        
+                             ts = s1.teacher_set.all()
+                             ts
+                             [<Teacher: Teacher object>, <Teacher: Teacher object>]
+                             ts[0].teacher_name
+                             '刘大拿'
+   ·又或者精确查找： 
+   
+                              t = s1.teacher_set.all().filter(teacher_name="刘大拿")
+                              t[0].teacher_name
+                              '刘大拿'
+
 ·N:N ManyToMany
     ·表示任意一个表的数据可以拥有对方表格多项数据，反之亦然
     ·比如典型例子就是老师和学生，老师可以有多个学生，学生也可以有多个老师
     ·使用上，在任意一方，使用ManyToMany定义，只需要定义一边
     ·add:
         ·添加老师，则在Student实例.teachers.add()，也可以用create方法
-            ·注意，用实例添加多对多数据，需要两次save s1 = Student() s1.student_name = "aoteng" s1.save() t1 = Teacher.objects.all()[0] s1.teachers.add(t1) s1.save() t = s1.teachers.all() t[0].teacher_name '刘大拿'
-    ·query:
-        ·跟一对多类似，使用隐含属性set查询 t1 = Teacher.objects.all()[0] ss = t1.student_set.all() ss[0].student_name 'aoteng'
-        ·注意：如果想实现双向互查，必须在类代码里面两边都相互添加一行: > models.ManyToManyField s1 = Student.objects.all()[0] tt = s1.teacher_set.all() tt[0].teacher_name '刘大拿'
+            ·注意，用实例添加多对多数据，需要两次save 
+            
+                            s1 = Student()
+                            s1.student_name = "aoteng"
+                            s1.save()
+                            t1 = Teacher.objects.all()[0]
+                            s1.teachers.add(t1)
+                            s1.save()
+                            t = s1.teachers.all()
+                            t[0].teacher_name
+                            '刘大拿'
+   ·query:
+        ·跟一对多类似，使用隐含属性set查询 
+        
+                            t1 = Teacher.objects.all()[0]
+                            ss = t1.student_set.all() 
+                            ss[0].student_name
+                            'aoteng'
+
+   ·注意：如果想实现双向互查，必须在类代码里面两边都相互添加一行: 
+        ·models.ManyToManyField 
+        
+                            s1 = Student.objects.all()[0]
+                            tt = s1.teacher_set.all() 
+                            tt[0].teacher_name
+                            '刘大拿'
+
 # 模版（Template）
 ·模板：一组相同或者相似的页面，在需要个性化的地方进行留白，需要的时候只是用相应数据进行填充
     ·步骤
         1.在settings.py中进行设置:TEMPLATES
-        2.在templates文件夹下编写模板并调用   一个最简单的完整的例子：
-        3.激活环境： activate tl_django
-        4.创建项目： django-admin startproject django_tpl
-        5.创建app： python manage.py startapp mytpl
-        6.在项目的根目录下建立一个templates的目录
-        7.在templates目录下新建一个one.html文件，内容如下：
-        Hello World！
-        8.编辑Django系统自带的settings.py文件： 找到Templates下的DIR位置，修改为： 'DIRS': [os.path.join(BASE_DIR, "templates")],
-        9.为manager.py添加启动变量runserver (仅限Pycharm环境)
-        10.编辑Django系统自带的urls.py： 在头部添加包引用：import mytpl.views as v (如果这行Pycharm出红线，就选File菜单的Invalidate Caches/Restart,重启后鼠标单击项目目录，Mark Directory As -> Sources Root) 然后再下方依葫芦画瓢添加一个路由：url(r'^one/', v.one),
-        11.打开mytpl下的views.py 在头部添加包引用：from django.http import HttpResponse 添加一个函数one: def one(request): return render(request,r"one.html")
-        12.运行manage.py
-        13.在浏览器输入：127.0.0.1:8000/one 
+        2.在templates文件夹下编写模板并调用   
+
+            一个最简单的完整的例子：
+            1. 激活环境： activate tl_django
+            2. 创建项目： django-admin startproject django_tpl
+            3. 创建app： python manage.py startapp mytpl
+            4. 在项目的根目录下建立一个templates的目录
+            5. 在templates目录下新建一个one.html文件，内容如下：
+                <html>
+                <body>
+                <h1>Hello World！</h1>
+                </body>
+                </html>
+            6. 编辑Django系统自带的settings.py文件： 
+                找到Templates下的DIR位置，修改为：
+                'DIRS': [os.path.join(BASE_DIR, "templates")],
+            7. 为manager.py添加启动变量runserver (仅限Pycharm环境)
+            8. 编辑Django系统自带的urls.py：
+                在头部添加包引用：import mytpl.views as v 
+                (如果这行Pycharm出红线，就选File菜单的Invalidate Caches/Restart,
+                重启后鼠标单击项目目录，Mark Directory As -> Sources Root
+                如果有很多个Sources Root（Root目录的颜色不同），取消其他的，
+                确保只有一个Root且必须是当前目录)
+                最后在下方依葫芦画瓢添加一个路由：url(r'^one/', v.one),
+            9. 打开mytpl下的views.py
+                在头部添加包引用：from django.http import HttpResponse
+                添加一个函数one:
+                def one(request):
+                    return render(request,r"one.html")
+            10. 运行manage.py
+            11. 在浏览器输入：127.0.0.1:8000/one
 ## 模板-变量
 ·变量的表示方法：{{var_name}}
 ·在系统调用模板的时候，会有相应的数据查找相应的变量名称，如果找到，则填充也叫渲染，否则跳过
 ·参见例子：two.html
 ## 模板-标签
-·for标签: {% for .. in .. %} 循环语句 {% endfor %}
-·参见例子：three.html，显示班级成绩
-·
-·if标签，用来判断条件 {% if 条件 %} 条件成立执行语句 {% elif 条件 %} 条件成立执行语句 {% else %} 以上条件都不成立执行语句 {% endif %}
+·for标签: 
 
-参见例子：four.html
+            {% for .. in .. %}
+              循环语句
+             {% endfor %}
+·参见例子：three.html，显示班级成绩
+·if标签，用来判断条件
+
+             {% if 条件 %}
+                 条件成立执行语句
+             {% elif 条件 %}
+                 条件成立执行语句
+             {% else %}
+                 以上条件都不成立执行语句
+             {% endif %}
+·参见例子：four.html
 ## csrf标签,跨站请求伪造
 ·在提交表单的时候，表单页面需要加上{% csrf_token %}
 ·参见例子fiveget请求表单地址, fivepost发送表单信息地址
@@ -410,4 +589,172 @@
     ·del request.session[key]
 # 分页
 ·django提供现成的分页器用来对结果进行分页 
-·from django.core.paginator import Paginator    
+    ·from django.core.paginator import Paginator    
+# Ajax
+##8. 基于类的视图
+·和基于函数的视图的优势和区别:
+    ·http方法的methode可以有各自的方法,不需要使用条件分支来解决
+    ·可以使用OOP技术(例如Mixin)
+·概述
+    ·核心是允许使用不同的实例方法来响应不同的HTTP请求方法,而避开条件分支实现
+    ·as_view函数作为类的可调用入库,该方法创建一个实例并调用dispatch方法,按照请求方法对请求进行分发,如果该方法没有定义,则引发HttpResponseNotAllowed
+·类属性使用
+    ·在类定义时直接覆盖
+    ·在调用as_view的时候直接作为参数使用,例如:
+    
+    urlpatterns = [
+    url(r'^about/', GreetingView.as_view(greeting="Greetxxx")),
+    ]
+·对基于类的视图的扩充大致有三种方法: Mixin, 装饰as_view, 装饰dispatch
+    ·使用Mixin
+        ·多继承的一种形式,来自弗雷的行为和属性组合在一起
+        ·解决多继承问题
+        ·View的子类只能单继承,多继承会导致不可期问题
+    ·多继承带来的问题:
+        ·结构复杂
+        ·优先顺序模糊
+        ·功能冲突
+    ·解决方法
+        ·规格继承 # java interface
+        ·实现继承 # python,ruby
+·在URLconf中装饰
+
+    from django.contrib.auth.decorators import login_required, permission_required
+    from django.views.generic import TemplateView
+    from .views import VoteView
+    urlpatterns = [
+        url(r'^about/', login_required(TemplateView.as_view(template_name="secret.html"))),
+        url(r'^vote/', permission_required('polls.can_vote')(VoteView.as_view())),
+    ]
+·装饰类
+    ·类的方法和独立方法不同,不能直接运用装饰器,需要用methode_decorator进行装饰
+    
+     from django.contrib.auth.decorators import login_required
+     from django.utils.decorators import method_decorator
+     from django.views.generic import TemplateView
+     class ProtectedView(TemplateView):
+         template_name = 'secret.html'
+         @method_decorator(login_required)
+         def dispatch(self, *args, **kwargs):
+         return super(ProtectedView, self).dispatch(*args, **kwargs)
+# Admin管理模块 (可以理解为Django自带的可定制型phpMyAdmin)
+·首先进行数据迁移，然后创建一个超管帐号
+
+        python manage.py makemigrations
+        python manage.py migrate
+        python manage.py createsuperuser
+·settings.py里面改为汉语：
+
+        LANGUAGE_CODE ='zh-Hans' #'en-us'
+        TIME_ZONE = 'Asia/Shanghai' #'UTC'
+·最后在浏览器输入:127.0.0.1/admin
+·进入管理界面后，只有一个空的项目和User和Group表可以管理，
+·在模型建立完毕后，界面会增加很多内容，可以设置各个模型（也就是数据库的表，这里称为模型）
+·先在models.py里建立3个模型：ClassRoom、Teacher、Student
+
+        from django.db import models
+        
+        # Create your models here.
+        class ClassRoom(models.Model):
+            roomID= models.IntegerField()
+            loc = models.CharField(max_length=20)
+            roomName = models.CharField(max_length=20)
+            def __str__(self):
+                return self.roomName
+        
+        class Teacher(models.Model):
+            name = models.CharField(max_length=5)
+            course = models.CharField(max_length=20)
+            room = models.OneToOneField(ClassRoom)
+            def __str__(self):
+                return self.name
+        
+        class Student(models.Model):
+            name = models.CharField(max_length=20)
+            age = models.IntegerField()
+            room = models.ForeignKey(ClassRoom)
+            def __str__(self):
+                return self.name
+·记得模型建立后，还需要进行一次完整的数据迁移才会真正在数据库中建表
+# 2. 绑定管理模型
+·在app目录下修改admin.py：
+
+        admin.site.register(Student, StudentAdminInfo)
+        admin.site.register(ClassRoom, ClassRoomAdminInfo)
+        admin.site.register(Teacher, TeacherAdminInfo)
+# 3. 设置admin管理类
+·实现方式（包括显示、增、删、改都集成在里面了）
+    ·ModelAdmin
+    ·在admin.py里为每个模型添加管理类：
+    
+    class ClassRoomAdminInfo(admin.ModelAdmin):
+        pass
+
+    class TeacherAdminInfo(admin.ModelAdmin):
+        pass
+
+    class StudentAdminInfo(admin.ModelAdmin):
+        pass
+   ·装饰器
+·list_per_page ： 修改页面显示数量：
+·actions_on_top/buttom ：操作选项在屏幕上方还是下方
+·list_display=[] : 控制列表中显示的内容：
+·以上设置都在admin.py的管理类里面修改：
+
+    class TeacherAdminInfo(admin.ModelAdmin):
+        list_per_page = 2 
+        actions_on_top = False
+        actions_on_bottom = True
+        list_display = ["name","room"]
+·除了显示字段外，还可以将方法作为列显示：
+    ·函数必须有返回值
+    ·short_description : 设置作为显示内容
+    ·admin_order_field : 排序绑定
+    ·PS：默认情况下，点击列的标题，可以以列为依据排序，但是以方法作为列是不能排序的，
+        ·这种情况下也可以为它绑定一个列，起到排序的功能
+    ·在Teacher类里面加入以下代码：
+    
+    # 定义一个方法，这个方法可以作为列显示
+    def curTime(self):
+        return  time.time()
+    
+    curTime.short_description = "当前时间" # 如果不设此行，默认显示为类名curTime
+    curTime.admin_order_field = "name" # 以字段名name为排序依据
+·关联对象（多表显示）
+    ·使用方法
+    ·在Teacher类里面加入以下代码：
+    
+        def getRoomName(self):
+            return self.room.roomName # 因为Teacher和ClassRoom是一对一关系，因此Teacher里可以访问ClassRoom的字段
+        getRoomName.short_description = "教室"
+·搜索功能 (search_fields)
+    ·在admin.py文件的TeacherAdminInfo里面增加： 
+    
+    search_fields = ["name"] # 搜索 name 列
+   ·界面将会出现一个搜索框，并以name列为条件搜索
+·字段屏蔽 - fields
+    ·默认情况下，字段是全部显示的，但是，也可以屏蔽
+    ·同样的，在TeacherAdminInfo里面增加：
+    
+    fields = ["name","course"] # 只显示name和course，屏蔽了Room
+·分组设置 - fieldsets
+    ·为了方便管理和让显示效果更好，字段也可以分组：
+    ·在TeacherAdminInfo里面增加元组fieldsets：
+    
+        # fields = ["name", "course"]
+        fieldsets = (
+            ("基本信息", {"fields": ["name", ]}),
+            ("其他信息", {"fields": ["room", "course"]}),
+        
+        )
+   ·特别注意：fields和fieldsets不能共存，否则报错。
+·其他设置 - admin.site
+    ·在admin.site下有许多设置，可以控制站点信息 
+    
+        admin.site.site_header = "这是站头"
+        admin.site.site_title = "这是站标题"
+        admin.site.index_title = "这是首页标语"
+       
+
+
+
