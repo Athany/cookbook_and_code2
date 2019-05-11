@@ -398,46 +398,47 @@
                     s.school_id = 2 
                     s.school_name = "nanjingtulingxueyuan" 
                     s.save() 
-                    #方法1：直接实例化 
+        #方法1：直接实例化 
                     m =Manager() 
                     m.manager_id=10 
                     m.manager_name = "dana" 
-                    m.my_school=s m.save() 
-                    #方法2：使用create 
+                    m.my_school=s 
+                    m.save() 
+        #方法2：使用create 
                     m = Manager.objects.create(manager_id=20,manager_name="erna",my_school=s)`
  ·query: （查）
    ·由子表查母表（定义关系的表叫子表），由子表的属性直接提取信息： 
         
-                        m = Manager.objects.get(manager_name="dana") 
-                        m 
-                        <Manager: dana>
-                        m.my_school 
-                        <School: nanjing tulingxueyuan>
-                        m.my_school.school_name 
-                        'nanjing tulingxueyuan' # 查询成功
+           m = Manager.objects.get(manager_name="dana") 
+           m 
+           <Manager: dana>
+           m.my_school 
+           <School: nanjing tulingxueyuan>
+           m.my_school.school_name 
+           'nanjing tulingxueyuan' # 查询成功
    ·又或者可以把上述操作串起来一次性操作：
         
-                        Manager.objects.get(manager_name="dana").my_school.school_name 
-                        'nanjing tulingxueyuan' # 查询成功
-   ·由母表查子表，使用双下划线： 
-       
-                        s = School.objects.get(manager__manager_name="dana") 
-                        s 
-                        <School: nanjing tulingxueyuan># 查询成功
+           Manager.objects.get(manager_name="dana").my_school.school_name 
+           'nanjing tulingxueyuan' # 查询成功
+   ·由母表查子表，使用双下划线：
+   
+           s = School.objects.get(manager__manager_name="dana") 
+           s 
+           <School: nanjing tulingxueyuan># 查询成功
  ·change:（改）
    ·单个修改后使用save保存 
         
-                        s.school_name = "南京图灵学院"
-                        s.save()
-                        s
-                        <School: 南京图灵学院> # 修改成功
+           s.school_name = "南京图灵学院"
+           s.save()
+           s
+           <School: 南京图灵学院> # 修改成功
 
    ·批量修改使用update 
    
-                        ss = School.objects.all()
-                        ss.update(school_name="图灵学院")
-                        ss
-                        [<School: 图灵学院>, <School: 图灵学院>] # 批量修改成功
+           ss = School.objects.all()
+           ss.update(school_name="图灵学院")
+           ss
+           [<School: 图灵学院>, <School: 图灵学院>] # 批量修改成功
  
    ·无论是对子表还是母表修改方法都一样
  ·delete:直接使用delete删除
@@ -457,25 +458,25 @@
         ·如果知道老师，查学校，则通过增加的关系属性，直接使用
         ·例如：查找t1老师是哪个学校的:
         
-                            t1.teacher_name
-                            '刘大拿'
-                            t1.my_school
-                            <School: 图灵学院>
+                t1.teacher_name
+                '刘大拿'
+                t1.my_school
+                <School: 图灵学院>
    ·反查
         ·由学校，想查下这个学校所有老师，则在学校后跟老师这个类（类名称小写）接下划线set来表示
         ·可以简单理解成teacher_set是School类里的一个隐藏属性
     ·例如，查询1号学校下面有多少个老师：
         
-                             ts = s1.teacher_set.all()
-                             ts
-                             [<Teacher: Teacher object>, <Teacher: Teacher object>]
-                             ts[0].teacher_name
-                             '刘大拿'
+                 ts = s1.teacher_set.all()
+                 ts
+                 [<Teacher: Teacher object>, <Teacher: Teacher object>]
+                 ts[0].teacher_name
+                 '刘大拿'
    ·又或者精确查找： 
    
-                              t = s1.teacher_set.all().filter(teacher_name="刘大拿")
-                              t[0].teacher_name
-                              '刘大拿'
+                 t = s1.teacher_set.all().filter(teacher_name="刘大拿")
+                 t[0].teacher_name
+                 '刘大拿'
 
 ·N:N ManyToMany
     ·表示任意一个表的数据可以拥有对方表格多项数据，反之亦然
