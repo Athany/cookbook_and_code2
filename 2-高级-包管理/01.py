@@ -1,4 +1,4 @@
-
+# -*- coding:utf8 -*-
 # 包含一个学生类
 # 一个sayHello函数
 # 一个打印语句
@@ -16,4 +16,6 @@ class Student():
 def sayhello():
     print("Hi,见到你很高兴！")
 
-print("我是模块p01，你在叫我吗？")
+
+if __name__ == '__main__':
+    print("我是模块p01，你在叫我吗？")

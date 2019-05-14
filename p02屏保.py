@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # 关于球的屏保 基于python的一个练习
 
 import random
