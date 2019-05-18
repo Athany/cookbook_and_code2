@@ -53,7 +53,7 @@
         ·案例09
         ·案例10， 工业风案例
 ·共享变量
-    ·共享变量： 当多个现成同时访问一个变量的时候，会产生共享变量的问题
+    ·共享变量： 当多个线程同时访问一个变量的时候，会产生共享变量的问题
     ·案例11
     ·解决变量：锁，信号灯，
     ·锁（Lock）： 
@@ -75,7 +75,7 @@
         ·案例13
     ·死锁问题, 案例14
     ·锁的等待时间问题， 案例15
-    ·semphore 
+    ·semaphore 
         ·允许一个资源最多由几个多线程同时使用
         ·案例16
 ·threading.Timer
@@ -84,25 +84,26 @@
 ·可重入锁
     ·一个锁，可以被一个线程多次申请
     ·主要解决递归调用的时候，需要申请锁的情况
+    ·threading.RLock()
     ·案例18
 # 线程替代方案
 ·subprocess 
     ·完全跳过线程，使用进程
     ·是派生进程的主要替代方案
     ·python2.4后引入
-·multiprocessiong
-    ·使用threadiing接口派生，使用子进程
+·multiprocessing
+    ·使用threading接口派生，使用子进程
     ·允许为多核或者多cpu派生进程，接口跟threading非常相似
-    ·python2.6
+    ·python2.6后引入
 ·concurrent.futures
     ·新的异步执行模块
     ·任务级别的操作
     ·python3.2后引入
 # 多进程
-·进程间通讯(InterprocessCommunication, IPC )
+·进程间通讯(InterProcess Communication, IPC )
 ·进程之间无任何共享状态
 ·进程
-    ·直接生成Process实例对象， 案例19
+    ·直接生成Process实例对象， 案例19                             # 注意案例19和20的写法，一个是函数，一个是派生类
     ·派生子类， 案例20
 ·在os中查看pid，ppid以及他们的关系
     ·案例21

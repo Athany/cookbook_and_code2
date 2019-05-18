@@ -5,8 +5,9 @@ loopSum = 1000000
 
 lock = threading.Lock()
 
+
 def myAdd():
-    global  sum, loopSum
+    global sum, loopSum
 
     for i in range(1, loopSum):
         # 上锁，申请锁
@@ -15,12 +16,14 @@ def myAdd():
         # 释放锁
         lock.release()
 
+
 def myMinu():
-    global  sum, loopSum
+    global sum, loopSum
     for i in range(1, loopSum):
         lock.acquire()
         sum -= 1
         lock.release()
+
 
 if __name__ == '__main__':
     print("Starting ....{0}".format(sum))
