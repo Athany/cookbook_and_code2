@@ -7,14 +7,14 @@
 ·日志
 ·日志的级别(level)
 　　·不同的用户关注不同的程序信息
-　　·DEBUG
-　　·INFO
-　　·NOTICE
-　　·WARNING
-　　·ERROR
-　　·CRITICAL
-　　·ALERT
-　　·EMERGENCT
+　　·DEBUG       debug
+　　·INFO        info
+　　·NOTICE      notice
+　　·WARNING     warning
+　　·ERROR       error
+　　·CRITICAL    critical
+　　·ALERT       alert
+　　·EMERGENCT   emergenct
 ·IO操作不要太频繁
 ·LOG的作用
 　　·调试
@@ -53,7 +53,7 @@
 　　·logging.critical(msg,*args,**kwargs)创建一条严重级别为CRITICAL的日志记录
 　　·logging.log(level,*args,**kwargs)创建一条严重级别为LEVEL的日志记录
 　　·logging.basicConfig(**kwargs) 对root logger进行一次性配置
-               # alt加左键选择多行同时操作
+               
 ·logging.basicConfig(**kwargs) 对root logger进行一次性配置
 　　·只在第一次调用的时候起作用
 　　·不配置logger则使用默认值

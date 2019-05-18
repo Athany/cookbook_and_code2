@@ -104,7 +104,7 @@
             
            
    · from package import *
-        ·导入当前包 '__init__.py'文件中中的所有函数和类 
+        ·导入当前包'__init__.py'文件中中的所有函数和类 
         ·使用方法：
         
                 func_name()
