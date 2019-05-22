@@ -2,80 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="880d365d-74f9-4c08-9153-4d67d022ef95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10-Log/xx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/rlt/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/tlxy_db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/tlxy_db/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/tlxy_db/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tlxy_db/tlxy_db/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/tulingxueyuan_views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/tulingxueyuan_views/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/tulingxueyuan_views/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-Django/tulingxueyuan_views/tulingxueyuan_views/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/DFR2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/DFR2/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/DFR2/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/DFR2/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/MySer/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/DFR2/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/TlxyDRF/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/TlxyDRF/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/TlxyDRF/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/TlxyDRF/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21-DRF/TlxyDRF/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-Log/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-Log/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-Log/02.py" beforeDir="false" afterPath="$PROJECT_DIR$/10-Log/02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10-Log/zzz.log" beforeDir="false" afterPath="$PROJECT_DIR$/10-Log/zzz.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Spider爬虫/cookie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/19-Spider爬虫/cookie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Spider爬虫/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/19-Spider爬虫/ghostdriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-Spider爬虫/note5-scrapy.md" beforeDir="false" afterPath="$PROJECT_DIR$/19-Spider爬虫/note5-scrapy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-高级-包管理/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/2-高级-包管理/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9-调试/测试1.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-调试/测试1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,21 +12,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/10-Log/note.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="125">
-                <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,24 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan_views/templates/render.html" />
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan_views/tulingxueyuan_views/urls.py" />
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan_views/teacher_app/views.py" />
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/settings.py" />
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan/tulingxueyuan/__init__.py" />
-        <option value="$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/models.py" />
-        <option value="$PROJECT_DIR$/20-Django/tlxy_db/tlxy_db/settings.py" />
-        <option value="$PROJECT_DIR$/20-Django/tlxy_db/rlt/models.py" />
-        <option value="$PROJECT_DIR$/20-Django/note.md" />
-        <option value="$PROJECT_DIR$/21-REST-Framework-API/note.md" />
-        <option value="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/models.py" />
-        <option value="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/migrations/serializers.py" />
-        <option value="$PROJECT_DIR$/21-DRF/TlxyDRF/case01/views.py" />
-        <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/11.py" />
-        <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/22.py" />
-        <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/111" />
-        <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/serializer.py" />
-        <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/views.py" />
         <option value="$PROJECT_DIR$/21-DRF/DFR2/DFR2/settings.py" />
         <option value="$PROJECT_DIR$/21-DRF/DFR2/MySer/models.py" />
         <option value="$PROJECT_DIR$/21-DRF/TlxyDRF/TlxyDRF/urls.py" />
@@ -163,16 +75,39 @@
         <option value="$PROJECT_DIR$/9-调试/测试1.py" />
         <option value="$PROJECT_DIR$/10-Log/xx.py" />
         <option value="$PROJECT_DIR$/10-Log/note.md" />
-        <option value="$PROJECT_DIR$/10-Log/01.py" />
         <option value="$PROJECT_DIR$/flask/app.py" />
+        <option value="$PROJECT_DIR$/10-Log/01.py" />
+        <option value="$PROJECT_DIR$/10-Log/02.py" />
+        <option value="$PROJECT_DIR$/12-多线程/09.py" />
+        <option value="$PROJECT_DIR$/12-多线程/10.py" />
+        <option value="$PROJECT_DIR$/12-多线程/12.py" />
+        <option value="$PROJECT_DIR$/12-多线程/11.py" />
+        <option value="$PROJECT_DIR$/12-多线程/13.py" />
+        <option value="$PROJECT_DIR$/12-多线程/14.py" />
+        <option value="$PROJECT_DIR$/12-多线程/15.py" />
+        <option value="$PROJECT_DIR$/12-多线程/16.py" />
+        <option value="$PROJECT_DIR$/12-多线程/17.py" />
+        <option value="$PROJECT_DIR$/12-多线程/18.py" />
+        <option value="$PROJECT_DIR$/12-多线程/19.py" />
+        <option value="$PROJECT_DIR$/12-多线程/note.md" />
+        <option value="$PROJECT_DIR$/12-多线程/20.py" />
+        <option value="$PROJECT_DIR$/12-多线程/21.py" />
+        <option value="$PROJECT_DIR$/12-多线程/24.py" />
+        <option value="$PROJECT_DIR$/12-多线程/22.py" />
+        <option value="$PROJECT_DIR$/12-多线程/23.py" />
       </list>
     </option>
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="361" />
-    <option name="y" value="6" />
-    <option name="width" value="1006" />
-    <option name="height" value="727" />
+    <option name="x" value="576" />
+    <option name="width" value="848" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,9 +126,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -205,6 +138,11 @@
             <path>
               <item name="cookbook_and_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookbook_and_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="15-格式化文件存储" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cookbook_and_code" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +167,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -256,29 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
-    <configuration name="案例01" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cookbook_and_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/9-调试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9-调试/案例01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.22">
     <configuration name="01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cookbook_and_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,6 +207,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10-Log/01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -321,7 +238,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="测试1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="06" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cookbook_and_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,12 +246,100 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/9-调试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12-多线程" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9-调试/测试1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12-多线程/06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="07" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cookbook_and_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12-多线程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12-多线程/07.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="21" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cookbook_and_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12-多线程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12-多线程/21.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="22" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cookbook_and_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12-多线程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12-多线程/22.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="23" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cookbook_and_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12-多线程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12-多线程/23.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,63 +370,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="p09" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cookbook_and_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2-高级-包管理" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-高级-包管理/p09.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="xx" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cookbook_and_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10-Log" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10-Log/xx.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.p09" />
-      <item itemvalue="Python.案例01" />
-      <item itemvalue="Python.测试1" />
-      <item itemvalue="Python.xx" />
+      <item itemvalue="Python.01" />
+      <item itemvalue="Python.21" />
+      <item itemvalue="Python.22" />
+      <item itemvalue="Python.23" />
+      <item itemvalue="Python.06" />
+      <item itemvalue="Python.07" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.xx" />
-        <item itemvalue="Python.测试1" />
-        <item itemvalue="Python.案例01" />
-        <item itemvalue="Python.p09" />
+        <item itemvalue="Python.22" />
+        <item itemvalue="Python.06" />
+        <item itemvalue="Python.07" />
+        <item itemvalue="Python.23" />
+        <item itemvalue="Python.21" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +399,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541943810788</updated>
-      <workItem from="1558145630049" duration="2146000" />
+      <workItem from="1558145630049" duration="9610000" />
+      <workItem from="1558163156596" duration="485000" />
+      <workItem from="1558163692228" duration="7491000" />
+      <workItem from="1558195005537" duration="18061000" />
     </task>
     <task id="LOCAL-00001" summary="by athany">
       <created>1544691555434</created>
@@ -514,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557817507393</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="by Athany">
+      <created>1558147858103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147858103</updated>
+    </task>
+    <task id="LOCAL-00013" summary="by Athany">
+      <created>1558214281238</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558214281238</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -523,7 +504,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2146000" />
+    <option name="totallyTimeSpent" value="35647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,28 +518,29 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.20045386" />
-      <window_info id="Structure" order="1" sideWeight="0.5013123" side_tool="true" weight="0.14256199" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.12783661" />
+      <window_info id="Structure" order="1" sideWeight="0.5013123" side_tool="true" weight="0.14220877" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34738618" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49776787" weight="0.3180328" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3462185" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49776787" weight="0.31260228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3262295" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32569557" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.44918033" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50223213" side_tool="true" weight="0.3180328" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50223213" side_tool="true" weight="0.31751227" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32819724" />
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.3295082" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="调试" order="14" weight="0.50756305" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,147 +562,31 @@
       </default-breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cookbook_and_code$01.coverage" NAME="01 Coverage Results" MODIFIED="1558185210543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$04.coverage" NAME="04 Coverage Results" MODIFIED="1558189117439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$14.coverage" NAME="14 Coverage Results" MODIFIED="1558199803629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$11.coverage" NAME="11 Coverage Results" MODIFIED="1558194265348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$20.coverage" NAME="20 Coverage Results" MODIFIED="1558208006622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$07.coverage" NAME="07 Coverage Results" MODIFIED="1558213735391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$16.coverage" NAME="16 Coverage Results" MODIFIED="1558201790719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$21.coverage" NAME="21 Coverage Results" MODIFIED="1558210996380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$19.coverage" NAME="19 Coverage Results" MODIFIED="1558209707784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$06.coverage" NAME="06 Coverage Results" MODIFIED="1558213832978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$manage.coverage" NAME="manage Coverage Results" MODIFIED="1558150214811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20-Django/tulingxueyuan" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$15.coverage" NAME="15 Coverage Results" MODIFIED="1558201196964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$09.coverage" NAME="09 Coverage Results" MODIFIED="1558190775263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$03.coverage" NAME="03 Coverage Results" MODIFIED="1558187096465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$18.coverage" NAME="18 Coverage Results" MODIFIED="1558204062813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$05.coverage" NAME="05 Coverage Results" MODIFIED="1558189594687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$22.coverage" NAME="22 Coverage Results" MODIFIED="1558214012567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$10.coverage" NAME="10 Coverage Results" MODIFIED="1558193709010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$13.coverage" NAME="13 Coverage Results" MODIFIED="1558198848377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$17.coverage" NAME="17 Coverage Results" MODIFIED="1558202556811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$23.coverage" NAME="23 Coverage Results" MODIFIED="1558211780289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+    <SUITE FILE_PATH="coverage/cookbook_and_code$08.coverage" NAME="08 Coverage Results" MODIFIED="1558190457391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12-多线程" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20-Django/tulingxueyuan/teacher/teacher_url.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p02屏保.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-oop/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0-基础/练习.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0-基础/12.14 oop-2.ipynb" />
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/p05.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/pkg01/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/pkg02/11.py" />
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3483">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4185">
-          <caret line="155" column="10" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4455">
-          <caret line="165" column="10" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="157" column="10" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/images/bg2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/site-packages/pygame/compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/site-packages/pygame/pkgdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/site-packages/django/utils/six.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/site-packages/pkg_resources/_vendor/six.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/site-packages/pkg_resources/extern/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/plane_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="336" lean-forward="true" selection-start-line="336" selection-end-line="336" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aricraft_war/p.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/p04.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/p02.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/p03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-高级-包管理/p07.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/2-高级-包管理/pkg02/p01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -838,13 +704,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10-Log/02.py">
+    <entry file="file://$PROJECT_DIR$/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563" />
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10-Log/zzz.log">
+    <entry file="file://$PROJECT_DIR$/10-Log/zz.log">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-Log/zzz.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2229" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-Log/all.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-Log/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-Log/02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#488#502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10-Log/01.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -853,18 +742,249 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/10-Log/note.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="125">
-            <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+          <first_editor relative-caret-position="654">
+            <caret line="125" column="14" lean-forward="true" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/13.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#16#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/14.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/15.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/17.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/oop/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/20.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/21.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/08.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/05.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/07.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/22.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/23.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/24.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="31" column="57" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-多线程/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="185">
+            <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
