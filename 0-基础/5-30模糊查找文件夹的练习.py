@@ -4,9 +4,6 @@
 # @File  : 5-30模糊查找文件夹的练习.py
 
 import os
-import sys
-
-#sys.setrecursionlimit(10)
 
 start_dir = input("请输入目录：")
 target = input("请输入您要搜索的文件名：")
