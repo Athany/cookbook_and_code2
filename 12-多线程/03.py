@@ -5,7 +5,7 @@ import _thread as thread
 def loop1(in1):
     # ctime得到当前时间
     print("Start loop 1 at:", time.ctime())
-    print("我是参数",in1)
+    print("我是参数", in1)
     # 睡眠时间
     time.sleep(4)
     print("End loop 1 at:", time.ctime())
