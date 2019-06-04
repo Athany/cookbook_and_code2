@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import xml.dom.minidom
 # 负责解析xml文件
 from xml.dom.minidom import parse

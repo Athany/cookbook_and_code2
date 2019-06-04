@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import xml.etree.ElementTree as et
 
 tree = et.parse(r'to_edit.xml')
@@ -12,7 +13,7 @@ for stu in root.iter("Student"):
     name = stu.find("Name")
     print("name===", name.text)
     if name != None:
-        name.set('test',name.text*2)
+        name.set('test', name.text * 2)
 
 stu = root.find("Student")
 

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time  ：2019/5/29 21:40
 # @Author: Athany
-# @File  : 全部替换功能的练习.py
+# @File  : 5-29全部替换功能的练习.py
 
 file_name = input("请输入你要打开的文件名：")
 

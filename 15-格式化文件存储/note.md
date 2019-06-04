@@ -69,7 +69,7 @@
             from Student
             where score>80
             ]]>
-· 常用的需要转义的保留字符和对应的实体引用
+#重点· 常用的需要转义的保留字符和对应的实体引用
     · &:&amp;
     · <:&lt;
     · >:&gt;
@@ -78,7 +78,7 @@
     · 一共五个， 每个实体引用都以&开头并且以分号结尾
 
 
-· XML标签的命名规则
+#重点·XML标签的命名规则
     · Pascal命名法
     · 用单词表示，第一个字母大写
     · 大小写严格区分
@@ -132,13 +132,12 @@
             · doc.documentElement:获取xml文档对象，一个xml文件只有一个文档对象
             · node.getAttribute(attr_name):获取xml节点的属性值
             · node.getElementByTagName(tage_name):得到一个节点对象集合
-            · node.childNodes;得到所有孩子节点
+            · node.childNodes;得到所有子节点
             · node.childNodes[index].nodeValue:获取单个节点值
             · node.firstNode:得到第一个节点，等价于node.childNodes[0]
-            · node.attributes[tage_name]
-　　　　　　　案例01.py
-
-- etree
+            · node.attributes[tag_name]
+　　　　　　· 案例01.py
+        · etree
     　　　　· 以树形结构来表示xml
     　　　　· root.getiterator:得到相应的可迭代的node集合
     　　　　· root.iter
@@ -147,7 +146,7 @@
     　　　　· node.tag:node对应的tagename
     　　　　· node.text:node的文本值
     　　　　· node.attrib:是node的属性的字典类型的内容
-    　　　　案例02.py
+    　　　　· 案例02.py
     
 · xml文件写入
     · 更改
