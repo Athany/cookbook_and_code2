@@ -11,7 +11,7 @@ FILE = 'README'
 
 # 1. 客户端链接远程主机上的FTP服务器
 try:
-    f = ftplib.FTP()
+    f = ftplib.FTP()   # 建立一个FTP
     # 通过设置调试级别可以方便调试
     f.set_debuglevel(2)
     # 链接主机地址
