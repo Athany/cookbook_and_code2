@@ -1,4 +1,4 @@
-from urllib import  request
+from urllib import request
 from bs4 import BeautifulSoup
 import re
 url = "http://www.baidu.com"
@@ -6,7 +6,7 @@ url = "http://www.baidu.com"
 rsp = request.urlopen(url)
 content = rsp.read()
 
-soup = BeautifulSoup(content,"lxml")
+soup = BeautifulSoup(content, "lxml")
 print(soup.name)
 print("=="*12)
 for node in soup.head.contents:
@@ -17,7 +17,6 @@ for node in soup.head.contents:
 
 
 print("=="*33)
-tags = soup.find_all(re.compile("^me"),content="always")
+tags = soup.find_all(re.compile("^me"), content="always")
 for tag in tags:
     print(tag)
-
