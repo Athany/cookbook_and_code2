@@ -4,7 +4,8 @@ import requests
 ssion = requests.session()
 
 # 2. 处理 headers
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0;Win64;x64)AppleWebKit / 537.36(KHTML,likeGecko) Chrome / 54.0.2840.99Safari / 537.36"}
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0;Win64;x64)AppleWebKit / 537.36(KHTML,likeGecko)\
+            Chrome / 54.0.2840.99Safari / 537.36"}
 
 # 3. 需要登录的用户名和密码
 data = {"email": "mr_mao_hacker@163.com", "password": "alarmchime"}

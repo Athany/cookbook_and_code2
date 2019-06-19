@@ -3,7 +3,7 @@ from email.mime.multipart import MIMEBase, MIMEMultipart  # 构建基础邮件�
 
 mail_mul = MIMEMultipart()
 # 构建邮件正文
-mail_text = MIMEText("Hello, i am 飞飞", "plain", "utf-8")
+mail_text = MIMEText("Hello, i am Athany", "plain", "utf-8")
 # 把构建好的邮件正文附加入邮件中
 mail_mul.attach(mail_text)
 
@@ -11,7 +11,7 @@ mail_mul.attach(mail_text)
 # 构建附件，需要从本地读入附件
 # 打开一个本地文件
 # 以rb格式打开
-with open("C:\\Users\\lee\\source\\repos\\hello\\hello\\net编程\\email.html", "rb") as f:
+with open("C:\\Users\\Administrator\\PycharmProjects\\untitled\\16-net编程\\email.html", "rb") as f:
     s = f.read()
     # 设置附件的MIME和文件名
     m = MIMEText(s, 'base64', "utf-8")
@@ -24,13 +24,13 @@ with open("C:\\Users\\lee\\source\\repos\\hello\\hello\\net编程\\email.html", 
     mail_mul.attach(m)
 
 # 发送email地址，此处地址直接使用我的qq有偶像，密码一般需要临时输入，此处偷懒
-from_addr = "1771784239@qq.com"
+from_addr = "330987706@qq.com"
 # 此处密码是经过申请设置后的授权码，不是不是不是你的qq邮箱密码
-from_pwd = "amvekroyscapjihh"
+from_pwd = "uqganadvvwhzcbch"
 
 # 收件人信息
 # 此处使用qq邮箱，我给自己发送
-to_addr = "1771784239@qq.com"
+to_addr = "330987706@qq.com"
 
 # 输入SMTP服务器地址
 # 此处根据不同的邮件服务商有不同的值，

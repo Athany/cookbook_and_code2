@@ -258,7 +258,7 @@
                     cookiedict = requests.utils.dict_from_cookiejar(cookiejar)   
                                 
    ·2、Session
-        ·跟服务器端session不是一个东东
+        ·跟服务器端session不是一个东西
         ·模拟一次会话，从客户端浏览器链接服务器开始，到客户端浏览器断开
         ·能让我们跨请求时保持某些参数，比如在同一个session实例发出的 所有请求之间保持cookie，以后所有请求都是这一个cookie，不需要再创建
             

@@ -1,4 +1,4 @@
-from urllib import  request
+from urllib import request
 from bs4 import BeautifulSoup
 
 url = "http://www.baidu.com"
@@ -6,7 +6,7 @@ url = "http://www.baidu.com"
 rsp = request.urlopen(url)
 content = rsp.read()
 
-soup = BeautifulSoup(content,"lxml")
+soup = BeautifulSoup(content, "lxml")
 
 # bs自动转码
 content = soup.prettify()
@@ -30,6 +30,7 @@ print(soup.title)
 print(soup.title.name)
 print(soup.title.attrs)
 print(soup.title.string)
+print(soup.title.text)
 print("=="*12)
 
 print(soup.name)

@@ -1,12 +1,11 @@
-from urllib import  request
+from urllib import request
 from bs4 import BeautifulSoup
-import re
 url = "http://www.baidu.com"
 
 rsp = request.urlopen(url)
 content = rsp.read()
 
-soup = BeautifulSoup(content,"lxml")
+soup = BeautifulSoup(content, "lxml")
 print(soup.prettify())
 print("=="*29)
 

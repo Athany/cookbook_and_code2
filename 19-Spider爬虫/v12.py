@@ -1,7 +1,7 @@
 from urllib import request
 
 if __name__ == '__main__':
-    url = "http://www.renren.com/965187997/profile"
+    url = "http://www.renren.com/223554497/profile"
 
     rsp = request.urlopen(url)
 

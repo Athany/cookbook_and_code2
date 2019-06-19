@@ -8,7 +8,7 @@ def tcp_clt():
     addr = ("127.0.0.1", 8998)
     sock.connect(addr)
     # 3. 发送内容到对方服务器
-    msg = "I love wangxiaojing"
+    msg = "I love zhouxiao"
     sock.send(msg.encode())
     # 4. 接受对方的反馈
     rst = sock.recv(500)

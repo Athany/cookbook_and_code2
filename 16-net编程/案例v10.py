@@ -15,11 +15,11 @@ header_sub = Header("这是我的主题", 'utf-8')
 msg['Subject'] = header_sub
 
 # 构建发送者地址和登录信息
-from_addr = "1771784239@qq.com"
-from_pwd = "amvekroyscapjihh"
+from_addr = "330987706@qq.com"
+from_pwd = "uqganadvvwhzcbch"
 
 # 构建邮件接受者信息
-to_addr = "1771784239@qq.com"
+to_addr = "330987706@qq.com"
 
 smtp_srv = "smtp.qq.com"
 

@@ -1,6 +1,6 @@
-'''
+"""
 使用代理访问百度网站
-'''
+"""
 
 from urllib import request, error
 

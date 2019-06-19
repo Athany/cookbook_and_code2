@@ -44,7 +44,7 @@ def serverFunc():
 
 if __name__ == '__main__':
     import time
-
+    print("Starting server....")
     while 1:
         try:
             serverFunc()
@@ -52,3 +52,4 @@ if __name__ == '__main__':
             print(e)
 
         time.sleep(1)
+    print("ended server")

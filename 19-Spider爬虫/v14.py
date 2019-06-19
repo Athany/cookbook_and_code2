@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 from urllib import request, parse
 from http import cookiejar
 
@@ -17,12 +19,13 @@ https_handler = request.HTTPSHandler()
 opener = request.build_opener(http_handler, https_handler, cookie_handler)
 # opener = request.build_opener(http_handler,https_handler,cookie_handler)
 
+
 def login():
-    '''
+    """
     负责初次登录
     需要输入用户名密码，用来获取登录cookie凭证
     :return:
-    '''
+    """
 
     # 发送登录信息的地址，此url需要从登录form的action属性中提取
     url = "http://www.renren.com/PLogin.do"
@@ -34,11 +37,11 @@ def login():
     }
 
     # 把数据进行编码
-    data = parse.urlencode(data)
+    data = parse.urlencode(data, encoding="utf-8")
     # data = parse.urlencode(data)
 
     # 创建一个请求对象
-    req = request.Request(url, data=data.encode())
+    req = request.Request(url, data=data.encode("utf-8"))
     # req = request.Request(url, data=data.encode())
 
     # 使用opener发起请求
@@ -51,8 +54,8 @@ def getHomePage():
     # 如果已经执行了login函数，则opener自动已经包含相应的cookie值
     rsp = opener.open(url)
 
-    html = rsp.read().decode()
-    with open("rsp.html", "w") as f:
+    html = rsp.read().decode("utf-8")
+    with open("rsp3.html", "w", encoding="utf-8") as f:
         f.write(html)
 
 

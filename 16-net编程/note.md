@@ -1,6 +1,6 @@
 # 网络编程
 ·网络：
-·网络协议：一套规则
+·网络协议：一套规则，协议(Protocol)是网络编程中一个非常重要的概念，指的是传输数据的格式。因为大家在网络中需要传输各种各样的信息，在程序中获得到的都是一组数值，如何阅读这些数值呢，就需要提前规定好这组数据的格式，在客户端按照该格式生成发送数据，服务器端按照该格式阅读该数据，然后在按照一定的格式生成数据反馈给客户端，客户端再按照该格式阅读数据。现实中类似的例子就是电报编码，每个数字都是用特定的数据表达。一般程序的协议都分成客户端发送的数据格式，以及服务器端反馈的数据格式，客户端和服务器端都遵循该格式生成或处理数据，实现两者之间的复杂数据交换。
 ·网络模型：
     ·七层模型：
         ·物理层
@@ -26,7 +26,7 @@
 ·端口
     ·范围：0-65535
     ·知名端口：0-1023
-    ·非知名端口：1024-
+    ·非知名端口：1024-65535
 # TCP/UDP协议
 ·UDP：非安全的不面向链接的传输
     ·安全性差
@@ -46,7 +46,7 @@
         ·1.建立socket，socket是负责具体通信的一个实例
         ·2.绑定，为创建的socket指派固定的端口和IP地址
         ·3.接受对方发送内容
-        ·4.给对方发送反馈，次步骤为非必须步骤
+        ·4.给对方发送反馈，此步骤为非必须步骤
     ·Client端流程：
         ·1.建立通信的socket
         ·2.发送内容到指定服务器
@@ -99,24 +99,24 @@
     ·1969 Leonard K.教授发给同事的"LO"
     ·1971美国国防部自主研发的阿帕网(Arpanet)的通讯机制
     ·通讯地址里用@
-    ·1978年中国的第一份电子邮件 "Across the Great Wall we can reach every corner in the world"
+    ·1987年中国的第一份电子邮件 "Across the Great Wall we can reach every corner in the world"
 ·管理程序
     ·Euroda使用邮件普及
-    ·Netscape, outlook, forxmail后来居上
-    ·Hotmal使用浏览器发送邮件
+    ·Netscape, outlook, Foxmail后来居上
+    ·Hotmail使用浏览器发送邮件
 ·参考资料
     ·官网 https://docs.python.org/3/library/email.mime.html
 # 邮件工作流程
-·MUA(MailUseraAgent)邮件用户代理
+·MUA(MailUserAgent)邮件用户代理
 ·MTA(MailTransferAgent)邮件传输代理
-·MDA(MailDeliveAgent)邮件投递代理
-·feifei.@qq.com, 老师, 北京海淀
-·feifei.@sina.com, 学生, 北京海淀
+·MDA(MailDeliverAgent)邮件投递代理
+·laoshi.@qq.com, 老师, 北京海淀
+·student.@sina.com, 学生, 北京海淀
 ·流程
-    ·i.MUA-->MTA,邮件已经在服务器上了
-    ·ii.qq MTA-->....-->sina MTA,邮件在新浪的服务器上
-    ·iii.sina MTA-->sina MDA,此时邮件已经在你的邮箱里了
-    ·iv.sina MDA-->MUA(Foxmail/Outlook),邮件下载到本地电脑
+    ·1.MUA-->MTA,邮件已经在服务器上了
+    ·2.qq MTA-->....-->sina MTA,邮件在新浪的服务器上
+    ·3.sina MTA-->sina MDA,此时邮件已经在你的邮箱里了
+    ·4.sina MDA-->MUA(Foxmail/Outlook),邮件下载到本地电脑
 ·编写程序
     ·发送：MUA-->MTA with SMTP:SimpleMailTransferProtocal,包含MTA-->MTA
     ·接受：MDA-->MUA with POP3 and IMAP:PostOfficeProtocal v3 and InternetMessageAcessProtocal v4

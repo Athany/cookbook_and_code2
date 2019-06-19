@@ -33,3 +33,30 @@ print(content3)
 s3 = "'bit', 'bat', 'but', 'hat', 'hit', 'hut'"
 content4 = re.findall(r"..t", s3)
 print(content4)
+
+# 提取每行中完整的年月入和时间段
+s4 = "se2332 1987-10-10 22:44:55   jkasfjakfd 2018-10-20 09:47:20"
+
+content5 = re.findall(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}", s4)
+print(content5)
+
+# 提取电子邮件格式
+s5 = "xxxx@gmail.com xxxx@qq.com baidu.com 999.com jkjk@163.com"
+
+content6 = re.findall(r"\w+@\w+.com", s5)
+print(content6)
+
+# 把以上合法的电子邮件的地址替换成我自己的电子邮件地址
+content7 = re.sub(r"\w+@\w+.com", "athany@qq.com", str(content6))
+print(content7)
+
+# 使用正则提取字符串中的单词
+s6 = "i love you not because who 233 of 890sdx not"
+content8 = re.findall(r"\b[a-zA-Z]+\b", s6)
+print(content8)
+
+# 以下两个关于match和search的正则表达式是等价的
+content9 = re.match(r"\b[a-zA-Z]+\b", s6)
+content10 = re.search(r"^\b[a-zA-Z]+\b", s6)
+print(content9.group())
+print(content10.group())

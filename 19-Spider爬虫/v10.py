@@ -1,7 +1,7 @@
-'''
+"""
 访问一个网址
 更改自己的UserAgent进行伪装
-'''
+"""
 from urllib import request, error
 
 if __name__ == '__main__':

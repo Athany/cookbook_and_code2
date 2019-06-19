@@ -6,11 +6,11 @@ from urllib import request, parse
 '''
 if __name__ == '__main__':
     url = 'http://www.baidu.com/s?'
-    wd = input("请输入关键字，比如大熊猫:")
+    wdip = input("请输入关键字，比如大熊猫:")
 
     # 做一个字典出来，要想使用data， 需要使用字典结构
     qs = {
-        "wd": wd
+        "wd": wdip
     }
 
     # 转换url编码

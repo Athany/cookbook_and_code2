@@ -1,6 +1,6 @@
-'''
+"""
 中文unicode案例
-'''
+"""
 
 import re
 

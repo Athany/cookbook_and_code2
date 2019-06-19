@@ -1,0 +1,5 @@
+2018-12-23 13:37:12,044 - DEBUG - debug msg
+2018-12-23 13:37:12,044 - INFO -  this is info
+2018-12-23 13:37:12,045 - WARNING -  warning
+2018-12-23 13:37:12,045 - ERROR - error bug BUG
+2018-12-23 13:37:12,045 - CRITICAL - critical

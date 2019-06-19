@@ -1,6 +1,6 @@
-'''
+"""
 URLError的使用
-'''
+"""
 from urllib import request, error
 
 if __name__ == '__main__':

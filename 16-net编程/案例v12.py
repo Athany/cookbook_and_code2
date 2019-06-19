@@ -12,9 +12,9 @@ from email.utils import parseaddr
 # 这个过程主要负责从MDA到MUA的下载并使用Parse粗略解析
 def getMsg():
     # 准备相应的信息
-    email = "1771784239@qq.com"
+    email = "330987706@qq.com"
     # 邮箱的授权码
-    pwd = "amvekroyscapjihh"
+    pwd = "uqganadvvwhzcbch"
 
     # pop3服务器地址
     pop3_srv = "pop.qq.com"  # 端口995
@@ -24,7 +24,7 @@ def getMsg():
 
     # user代表email地址
     srv.user(email)
-    # pass_代表密码
+    # pass_代表密码这儿是授权码
     srv.pass_(pwd)
 
     # 以下操作根据具体业务具体使用

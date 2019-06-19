@@ -1,7 +1,7 @@
-'''
+"""
 使用参数headers和params
 研究返回结果
-'''
+"""
 import requests
 
 # 完整访问url是下面url加上参数构成
@@ -12,12 +12,11 @@ kw = {
 }
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML,\
+                   like Gecko) Chrome/64.0.3282.119 Safari/537.36"
 }
 
 # params 接收一个字典或者字符串的查询参数，字典类型自动转换为url编码，
-# 不需要urlencode()
-url = "http://www.baidu.com/s?"
 response = requests.get(url, params=kw, headers=headers)
 
 # 查看响应内容，response.text 返回的是Unicode格式的数据

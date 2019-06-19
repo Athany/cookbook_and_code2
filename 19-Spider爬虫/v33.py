@@ -1,6 +1,6 @@
-'''
+"""
 search
-'''
+"""
 import re
 
 s = r'\d+'

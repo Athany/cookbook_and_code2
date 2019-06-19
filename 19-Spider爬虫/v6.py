@@ -1,4 +1,4 @@
-'''
+"""
 任务要求和内容跟 案例2 一样
 本案例只是利用Request来实现v5的内容
 利用parse模块模拟post请求
@@ -9,7 +9,7 @@
 3. 请求地址是 http://fanyi.baidu.com/sug
 4. 利用NetWork-All-Hearders，查看，发现FormData的值是 kw:girl
 5. 检查返回内容格式，发现返回的是json格式内容==>需要用到json包
-'''
+"""
 
 from urllib import request, parse
 # 负责处理json格式的模块
@@ -23,11 +23,11 @@ import json
 '''
 
 baseurl = 'https://fanyi.baidu.com/sug'
-
+wdip = input("请输入需要翻译的英文单词，比如girl:")
 # 存放用来模拟form的数据一定是dict格式
 data = {
     # girl是翻译输入的英文内容，应该是由用户输入，此处使用硬编码
-    'kw': 'girl'
+    'kw': wdip
 }
 
 # 需要使用parse模块对data进行编码

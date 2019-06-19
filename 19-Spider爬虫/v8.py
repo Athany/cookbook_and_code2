@@ -1,12 +1,12 @@
-'''
+"""
 URLError的使用
-'''
+"""
 
 from urllib import request, error
 
 if __name__ == '__main__':
 
-    url = "http:iiiiiiiiidu//www.baidu.com/welcome.html"
+    # url = "http:iiiiiiiiidu//www.baidu.com/welcome.html"
 
     url = "http://www.sipo.gov.cn/www"
     try:

@@ -4,7 +4,7 @@
             2. 发送内容到指定服务器
             3. 接受服务器给定的反馈内容
 '''
-
+# socket模块负责socket编程
 import socket
 
 
@@ -17,7 +17,7 @@ def clientFunc():
     data = text.encode()
 
     # 发送
-    sock.sendto(data, ("127.0.0.1", 7852)) # 无法发送127.0.0.1时检查是否开启了防火墙，关闭之后美滋滋。
+    sock.sendto(data, ("127.0.0.1", 7852))  # 无法发送127.0.0.1时检查是否开启了防火墙，关闭之后美滋滋。
 
     data, addr = sock.recvfrom(500)
 

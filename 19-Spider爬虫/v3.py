@@ -13,6 +13,4 @@ if __name__ == '__main__':
     print("Code: {0}".format(rsp.getcode()))
 
     html = rsp.read()
-
-    # 使用get取值保证不会出错
     html = html.decode()

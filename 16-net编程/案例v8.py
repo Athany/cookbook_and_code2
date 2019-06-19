@@ -9,7 +9,7 @@ mail_content = """
         </head>
         <body>
         <h1> 这是一封HTML格式邮件</h1>
-        <p>我是飞飞</p>
+        <p>我是Athany</p>
         </body>
         </html>
         """
@@ -17,11 +17,11 @@ mail_content = """
 msg = MIMEText(mail_content, "html", "utf-8")
 
 # 构建发送者地址和登录信息
-from_addr = "1771784239@qq.com"
-from_pwd = "amvekroyscapjihh"
+from_addr = "330987706@qq.com"
+from_pwd = "uqganadvvwhzcbch"
 
 # 构建邮件接受者信息
-to_addr = "1771784239@qq.com"
+to_addr = "330987706@qq.com"
 
 smtp_srv = "smtp.qq.com"
 
@@ -36,4 +36,3 @@ try:
 
 except Exception as e:
     print(e)
-

@@ -18,11 +18,11 @@ opener = request.build_opener(http_handler, https_handler, cookie_handler)
 
 
 def login():
-    '''
+    """
     负责初次登录
     需要输入用户名密码，用来获取登录cookie凭证
     :return:
-    '''
+    """
 
     # 此url需要从登录form的action属性中提取
     url = "http://www.renren.com/PLogin.do"

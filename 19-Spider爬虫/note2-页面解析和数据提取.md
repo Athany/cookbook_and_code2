@@ -65,7 +65,7 @@
         ·attrs
     ·案例v40
 ·NavigableString
-    ·对应内容值
+    ·对应内容值,按照字面意义上理解为可遍历字符串，soup.tag.string 用来获取便签内部的文字内容，通过.string来调用
 ·BeautifulSoup
     ·表示一个文档的内容，大部分可以把它当做tag对象
     ·一般我们可以用soup来表示
