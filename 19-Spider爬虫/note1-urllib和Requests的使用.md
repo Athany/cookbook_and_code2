@@ -116,7 +116,7 @@
     ·代理用来隐藏真实访问中，代理也不允许频繁访问某一个固定网站，所以，代理一定要很多很多
     ·基本使用步骤：
         ·设置代理地址
-        ·创建ProxyHandler：调用urlib.request.ProxyHandler()，proxies参数为一个字典
+        ·创建ProxyHandler：调用urllib.request.ProxyHandler()，proxies参数为一个字典
         ·创建Opener：opener = request.build_opener(proxy_handler)
         ·安装Opener：request.install_opener(opener)
 ·使用install_opener方法之后，会将程序默认的urlopen方法替换掉。也就是说，如果使用install_opener之后，在该文件中，再次调用urlopen会使用自己创建好的opener。如果不想替换掉，只是想临时使用一下，可以使用opener.open(url)，这样就不会对程序默认的urlopen有影响。

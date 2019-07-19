@@ -5,6 +5,8 @@ python中正则模块是re
 2. 通过Pattern对象的一系列方法对文本进行匹配，匹配结果是一个Match对象
 3. 用Match对象的方法，对结果进行操作
 """
+import this
+
 import re
 
 # \d表示以数字

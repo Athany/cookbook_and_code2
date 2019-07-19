@@ -17,7 +17,6 @@ https_handler = request.HTTPSHandler()
 
 # 创建请求管理器
 opener = request.build_opener(http_handler, https_handler, cookie_handler)
-# opener = request.build_opener(http_handler,https_handler,cookie_handler)
 
 
 def login():
