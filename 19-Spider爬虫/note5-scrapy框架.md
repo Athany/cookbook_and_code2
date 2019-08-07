@@ -153,15 +153,15 @@
         · selector
             · 选择器，允许用户使用选择器来选择自己想要的内容
             · response.selector.xpath：response.xpath是selector.xpath的快捷方式
-            · response.selector.css：ressponse.css是它的快捷方式
+            · response.selector.css：response.css是它的快捷方式
             · selector.extract()：把节点的内容用unicode形式返回
             · selector.re：允许用户通过正则选择内容
         · 例子：
             # 1、用xpath找class为asd的div标签下的有style属性的p标签，然后接着继续找这个标签下面的a标签的href属性
-            rsts = response.xpath("//div[@class='asd']/p[@style]/a/@href")
+                rsts = response.xpath("//div[@class='asd']/p[@style]/a/@href")
             # 2、用for in 打印找到内容
-            for i in rsts:
-                print(i.extract())
+                for i in rsts:
+                    print(i.extract())
     4.练习 （自己做的小练习，获取招聘网站的信息）https://blog.csdn.net/ydw_ydw/article/details/82391726
         1.首先进入猎聘网，搜索Python，按F12出现如下界面
         2.查找岗位的连接所在位置
@@ -195,5 +195,6 @@
 · scrapy_redis官方网站
     · scrapy-redis.readthedocs.org
 # 推荐书籍
-   · Python爬虫开发与项目实战
-   · 精通python爬虫框架scrapy
+   · Python爬虫开发与项目实战,范传辉，机械工业出版社
+   · 精通python爬虫框架scrapy，李斌 翻译，人民邮电出版社
+   · 崔庆才

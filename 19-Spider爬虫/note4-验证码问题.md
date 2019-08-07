@@ -25,9 +25,9 @@
 · OCR:OpticalChracterRecognition，光学文字识别
 · Tesseract:一个ocr库，由google赞助
     · 安装：
-        · window:百度下载安装，是一个exe文件
+        · windows:百度下载安装，是一个exe文件
         · Mac:brew install tesseract
-        · Linux:apt_get install tesseract-ocr
+        · Linux:apt-get install tesseract-ocr
                 aptitude search tesseract
         · 安装完成后需要设置环境变量
     · 安装完成后还需要pytesseract
